@@ -10,8 +10,7 @@ public class JavaString {
 		System.out.println("hh"+4+5);
 		String str2="puneet";
 		String str1= new String("puneet");
-		String str3=str1.intern();
-		
+		String str3=str1.intern();		
 		System.out.println();
 		List <String>list=new ArrayList<String>();
 		list.add("puneet");
@@ -26,5 +25,9 @@ public class JavaString {
 		}else{
 			System.out.println(false);
 		}
+
 	}
+	
+	
+	
 }

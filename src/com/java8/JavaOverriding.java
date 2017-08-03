@@ -49,12 +49,17 @@ class NewClass extends JavaOverriding{
 
 class Animal{
 
-	public String bark(){
+	public String bark()throws Exception{
 		
 		return "no no";
 	}
 }	
 	class Dog extends Animal{
-	
+		
+		@Override
+		public String bark(){
+			
+			return "bhoo bhoo";
+		}
 	}
 	

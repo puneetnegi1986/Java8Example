@@ -7,5 +7,4 @@ public class BitWiseClass {
 		int final1 = 15 & hash ;
 		System.out.println(final1);
 	}
-
 }
