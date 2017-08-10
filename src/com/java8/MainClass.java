@@ -1,5 +1,7 @@
 package com.java8;
 
+import java.io.IOException;
+
 public class MainClass extends AbstractClass {
 
 	public MainClass(int x, int y) {
@@ -16,7 +18,8 @@ public int  sum(int x,int y){
 	   
 	   try{		
 		System.out.println("try  block get called..");
-		return 2;
+		throw new IOException();
+		
 	   	}catch(Exception e){
 			System.out.println("catch Block");
 			return 3;
@@ -29,6 +32,7 @@ public int  sum(int x,int y){
 	public static void main(String arr[]){
 		
 		MainClass mainclass=new MainClass(2,3);		
-				mainclass.sum(3,5);		
+				System.out.println(mainclass.sum(3,5));		
+				
 	}
 }

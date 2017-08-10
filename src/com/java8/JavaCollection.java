@@ -16,7 +16,7 @@ public class JavaCollection {
 		JavaCollection javaCollection=new JavaCollection();
 		List<? extends Animals> list=javaCollection.getAnimalsCollection();
         list.forEach(a-> System.out.println(a.getName()));
-	}
+        }
 
 	public List<Animals> getAnimalsCollection(){
 		
@@ -28,8 +28,6 @@ public class JavaCollection {
 	}
 	
 }
-
-
 
 class DataMap<K,V>{
 	V v=null;
@@ -46,12 +44,9 @@ class DataMap<K,V>{
 	
 }
 
-
 class Exp extends DataMap<String,String>{
 	
 }
-
-
 
 class Animals{
 	private String name;
@@ -70,7 +65,6 @@ class Animals{
 	
 }
 
-
 class Cat extends Animals{
 	
 	Cat(){
@@ -78,7 +72,6 @@ class Cat extends Animals{
 	}
 	
 }
-
 
 class Dogs extends Animals{
 	
