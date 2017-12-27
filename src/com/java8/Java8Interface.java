@@ -1,6 +1,10 @@
 package com.java8;
 
 public class Java8Interface {
+	public static void main(String arr[]) {
+		Example example =new Example();
+		example.run();
+	}
 
 }
 
@@ -14,21 +18,35 @@ class Example implements flyable,fly{
 	@Override
 	public void run() {
     System.out.println(" run method is overriden");
+	}
+
+	@Override
+	public void execute() {
+		// TODO Auto-generated method stub
+		
 	}	
 }
 
 class Example1 implements flyable,fly{
 
 	@Override
-	public void run() {		
+	public void run() {
 		fly.super.run();
 	}
+
+	@Override
+	public void execute() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	
 
 	
 }
 
+@FunctionalInterface
 interface flyable{
-	
 	default void fly(){
 		System.out.println("Object is flying..");
 	}
@@ -40,6 +58,8 @@ interface flyable{
    public static void sing(){
 	   System.out.println("Object is singing");
    }
+   
+   public void execute();
 	 
 }
 

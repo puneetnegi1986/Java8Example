@@ -20,7 +20,7 @@ public class JavaAnnotation {
 			 }
 		 }
 	 }
-	 System.out.println();
+	 System.out.println(" ");
  }
 }
 

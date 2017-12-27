@@ -5,7 +5,6 @@ public class ExceptionHandling {
 	public static void main(String arr[]){
 		
 		ExceptionHandling exp=new ExceptionHandling();	
-		
 	 System.out.println(exp.div(3,0));
 	}
 
@@ -27,6 +26,21 @@ public class ExceptionHandling {
 			c=a/b;
 		}		
 		return c;
+	}
+	
+	public int display(){
+		
+		int c=0;
+		try {
+			System.out.println("Try block");
+		}catch(Exception e) {
+			System.out.println("Catch Block");
+		}finally {
+			System.out.println("Finally Blcok");
+		}
+		return c;
+		
+		
 	}
 }
 
